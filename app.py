@@ -3,6 +3,9 @@ import gradio as gr
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, AutoConfig
 import pandas as pd
 import json
+import torch
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 with open("tag_map.json") as tag_map_file:
     tag_map = json.load(tag_map_file)
@@ -16,6 +19,7 @@ config.num_classes = len(tag_map)
 model = AutoModelForSequenceClassification.from_pretrained(
     model_name_or_path, config=config
 )
+model.to(device)
 tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
 
 
@@ -28,7 +32,14 @@ def classify(csv_file):
 
         pred = (
             reverse_map[
-                model(**tokenizer(sent, return_tensors="pt")).logits.argmax(-1).item()
+                model(
+                    **{
+                        i: j.to(model.device)
+                        for i, j in tokenizer(sent, return_tensors="pt").items()
+                    }
+                )
+                .logits.argmax(-1)
+                .item()
             ]
             .replace("_", " ")
             .capitalize()
