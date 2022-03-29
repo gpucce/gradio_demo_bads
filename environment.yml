@@ -3,25 +3,25 @@ channels:
   - defaults
 dependencies:
   - _openmp_mutex==4.5=1_gnu
-  - ncurses==6.3=h7f8727e_2
-  - setuptools==58.0.4=py38h06a4308_0
-  - wheel==0.37.1=pyhd3eb1b0_0
-  - _libgcc_mutex==0.1=main
-  - sqlite==3.38.0=hc218d9a_0
-  - python==3.8.13=h12debd9_0
-  - tk==8.6.11=h1ccaba5_0
-  - libgomp==9.3.0=h5101ec6_17
-  - ca-certificates==2022.3.18=h06a4308_0
-  - readline==8.1.2=h7f8727e_1
-  - openssl==1.1.1n=h7f8727e_0
-  - xz==5.2.5=h7b6447c_0
-  - zlib==1.2.11=h7f8727e_4
-  - ld_impl_linux-64==2.35.1=h7274673_9
-  - libgcc-ng==9.3.0=h5101ec6_17
-  - pip==21.2.4=py38h06a4308_0
-  - libstdcxx-ng==9.3.0=hd4cf53a_17
-  - certifi==2021.10.8=py38h06a4308_2
-  - libffi==3.3=he6710b0_2
+  - ncurses==6.3
+  - setuptools==58.0.4
+  - wheel==0.37.1
+  - _libgcc_mutex==0.1
+  - sqlite==3.38.0
+  - python==3.8.13
+  - tk==8.6.11
+  - libgomp==9.3.0
+  - ca-certificates==2022.3.18
+  - readline==8.1.2
+  - openssl==1.1.1n
+  - xz==5.2.5
+  - zlib==1.2.11
+  - ld_impl_linux-64==2.35.1
+  - libgcc-ng==9.3.0
+  - pip==21.2.4
+  - libstdcxx-ng==9.3.0
+  - certifi==2021.10.8
+  - libffi==3.3
   - pip:
     - gradio==2.8.14
     - pandas==1.4.1
@@ -29,4 +29,3 @@ dependencies:
     - transformers==4.17.0
     - jinja2==3.1.1
 
-prefix: /home/gpuccetti/anaconda3/envs/ProSolAdv
