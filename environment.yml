@@ -10,7 +10,6 @@ dependencies:
   - tk==8.6.11
   - ca-certificates==2022.3.18
   - openssl==1.1.1n
-  - xz==5.2.5
   - zlib==1.2.11
   - pip==21.2.4
   - certifi==2021.10.8
