@@ -14,7 +14,6 @@ dependencies:
   - zlib==1.2.11
   - pip==21.2.4
   - certifi==2021.10.8
-  - libffi==3.3
   - pip:
     - gradio==2.8.14
     - pandas==1.4.1
