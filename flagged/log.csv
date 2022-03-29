@@ -1,0 +1,4 @@
+'text','output','timestamp'
+'this is and advantage','','2022-03-23 19:23:03.803920'
+'this is and advantage','','2022-03-23 19:23:04.659285'
+'In other words, the specification by the second specifying means and the obtainment by the second obtaining means may be repeated until the reduced image is reduced enough.'', ''In an embodiment of the present invention, the character area specifying means may include extracting means for extracting, using a graph cut method, an area included in the character area among from areas obtained by the area obtaining means, and means for specifying the character area in the target image based on the area extracted by the extracting means.','Solution to the problem','2022-03-23 23:04:49.746819'
