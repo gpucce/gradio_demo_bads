@@ -3,7 +3,7 @@ channels:
   - defaults
 dependencies:
   - python==3.8.13
-  - pip==21.2.4
+  - pip
   - pip:
     - gradio==2.8.14
     - pandas==1.4.1
