@@ -10,4 +10,11 @@ pinned: false
 license: mit
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces#reference
+To start the app, assuming conda is installed run:
+```
+conda create -f environment.yml
+
+conda activate ProSolAdv
+
+python app.py
+```
