@@ -10,10 +10,15 @@ pinned: false
 license: mit
 ---
 
-To start the app, assuming conda is installed run:
+To start the app, assuming conda is installed, first create an environment:
+```bash
+## First time only
+conda env create -f environment.yml
 ```
-conda create -f environment.yml
 
+Then each time start the app this way:
+```bash
+## Each time
 conda activate ProSolAdv
 
 python app.py
